@@ -1,0 +1,105 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5DC;
+    color: #8B4513;
+    height: 100vh;
+    width: 100vw;
+    font-family: cursive;
+}
+
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 120px;
+    min-width: 300px;
+    border: 1px solid #8B4513(255, 255, 255);
+}
+
+.contenedor-form .text-input{
+    margin: 5px 0;
+}
+
+.contenedor-form .row-button
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contenedor-form .row-button .cancel-button
+{
+    margin-right: 15px;;
+}
+
+.contenedor-tabla {
+    border: 2px solid #8B4513;
+    border-radius: 200px;
+    width: 1200px;
+    padding: 80px;
+}
+
+.tabla {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 900px;
+}
+
+.division {
+    justify-content: space-between;
+    align-items: center;
+}
+
+th {
+    padding: 20px;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+.contenedor-tabla button {
+    background-color: #8B4513; 
+    color: #FFF; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+.text-input {
+    margin: 10px 0; 
+    padding: 8px; 
+    border: 1px solid #8B4513; 
+    border-radius: 4px; 
+}
+
+.contenedor-form button {
+    background-color: #8B4513; 
+    color: #FFF; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+select {
+    padding: 8px; 
+    border: 1px solid #8B4513; 
+    border-radius: 4px;
+}
+
+#abm-form
+{
+    border: 2px solid #8B4513;
+    border-radius: 200px;
+    width: 1000px;
+    padding: 80px;
+}

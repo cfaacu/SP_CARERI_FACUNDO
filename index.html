@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>RPP-Careri-Facundo</title>
+</head>
+
+<body class="main-content">
+    <div id="spinner" style="display: none;">
+        <img src="loading-buffering.gif" alt="Cargando...">
+    </div>
+    <div class="contenedor-tabla" id="contenedor-tabla">
+        <div class="row division">
+            <h3>Formulario Lista</h3>
+        </div>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th id="cabecera-id" columna="id">Id</th>
+                    <th id="cabecera-nombre" columna="nombre">Nombre</th>
+                    <th id="cabecera-apellido" columna="apellido">Apellido</th>
+                    <th id="cabecera-edad" columna="edad">Edad</th>
+                    <th id="cabecera-equipo" columna="equipo">Equipo</th>
+                    <th id="cabecera-posicion" columna="posicion">Posicion</th>
+                    <th id="cabecera-cantidadGoles" columna="cantidadGoles">Cantidad Goles</th>
+                    <th id="cabecera-titulo" columna="titulo">Titulo</th>
+                    <th id="cabecera-facultad" columna="facultad">Facultad</th>
+                    <th id="cabecera-añoGraduacion" columna="añoGraduacion">Año Graduacion</th>
+                    <th id="cabecera-modificar" columna="modificar">Modificar</th>
+                    <th id="cabecera-eliminar" columna="eliminar">Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="filas-tabla"></tbody>
+        </table>
+
+        <div class="row">
+            <button id="boton-agregar" class="agregar-button" onclick="abrirFormulario()">
+                Agregar Elemento
+            </button>      
+        </div>
+    </div>
+
+
+
+    <div class="contenedor-form" id="abm-form">
+        Formulario ABM
+        <select id="tipo-input" onchange="seleccionarTipoPersona()">
+            <option value="1">Futbolista</option>
+            <option value="2">Profesional</option>
+        </select>
+        <input id="id-input" hidden type="text">
+        <input class="text-input" id="nombre-input" placeholder="Ingrese el nombre" type="text">
+        <input class="text-input" id="apellido-input" type="text" placeholder="Ingrese el apellido">
+        <input class="text-input" id="edad-input" type="number" placeholder="Ingrese la edad">
+
+        <input class="text-input" id="equipo-input" type="text" placeholder="Ingrese el equipo">
+        <input class="text-input" id="posicion-input" type="text" placeholder="Ingrese la posicion">
+        <input class="text-input" id="cantidadGoles-input" type="number" placeholder="Ingrese la cantidad de goles">
+
+        <input class="text-input" id="titulo-input" type="text" placeholder="Ingrese el titulo">
+        <input class="text-input" id="facultad-input" type="text" placeholder="Ingrese la facultad">
+        <input class="text-input" id="añoGraduacion-input" type="number" placeholder="Ingrese el año de graduacion">
+
+        <div class="row-button">
+            <button class="cancel-button" onclick="abrirTabla()">
+                Cancelar
+            </button>
+            <button onclick="aceptarAccion()">
+                Aceptar
+            </button>
+        </div>
+    </div>
+</body>
+
+<script src="persona.js"></script>
+<script src="futbolista.js"></script>
+<script src="profesional.js"></script>
+<script src="index.js"></script>
+
+</html>
